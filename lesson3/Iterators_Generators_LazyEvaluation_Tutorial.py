@@ -240,7 +240,7 @@ print("=" * 60)
 
 def chain_manual(*iterables):
     """Chain iterables together — manual version."""
-    for it in iterables:
+    for it in iterables: # [[i1, i1], [i2, i2], [i3, i3]
         for item in it:
             yield item
 
